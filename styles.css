@@ -1,0 +1,287 @@
+/* Reset de CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #fff;
+    color: #0077b6;
+    transform: scale(1.1);
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('22.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seção de introdução */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-bottom: 5px solid #00b4d8;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Botão de download */
+.download-section {
+    text-align: center;
+    padding: 50px;
+    background: #0077b6;
+    color: #fff;
+}
+
+.download-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.download-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.download-btn {
+    background-color: #fff;
+    color: #0077b6;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #00b4d8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.download-btn i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Seção de vídeo */
+.video-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f9;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.video-section video {
+    border: 5px solid #00b4d8;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.video-section video:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ */
+.faq {
+    padding: 50px;
+    background-color: #fff;
+    border-top: 5px solid #00b4d8;
+    border-bottom: 5px solid #00b4d8;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 30px;
+}
+
+.faq ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.faq ul li {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.faq ul li strong {
+    color: #0077b6;
+}
+
+.faq ul li:hover {
+    color: #00b4d8;
+}
+
+/* Sobre Nós */
+.about {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f9;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.about a {
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about a:hover {
+    color: #0077b6;
+}
+
+/* Footer */
+footer {
+    background-color: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner {
+        height: 60vh; /* Ajusta a altura do banner para telas menores */
+    }
+
+    .banner h1 {
+        font-size: 2.5rem; /* Reduz o tamanho do texto no banner */
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .faq ul li, .intro p {
+        font-size: 1rem;
+    }
+
+    .video-section video {
+        width: 100%;
+    }
+}
